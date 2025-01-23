@@ -765,23 +765,23 @@
 	}
 	```
 
- 	`alt_id` length longer than 40
-	```javascript
-	"__invalid": {
-		"employee": {
-			"[record num]": {
-				"alt_id": "exceeds 40 characters."
-			}
-		}
-	}
-	```
-
  	`alt_id` must be unique
 	```javascript
 	"__invalid": {
 		"employee": {
 			"[record num]": {
 				"alt_id": "must be unique."
+			}
+		}
+	}
+	```
+
+ 	`alt_id` be in use already
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"alt_id": "'[alt_id]' has already been used."
 			}
 		}
 	}
